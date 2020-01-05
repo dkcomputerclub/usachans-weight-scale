@@ -25,4 +25,3 @@ Rasberry Pi 1台
   
 ### DynamoDB作成
 AWS→DynamoDB→プライマリキー:id
-  
