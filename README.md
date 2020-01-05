@@ -18,8 +18,8 @@ Rasberry Pi 1台
   %aws --version
   - aws configure設定  
   %aws confiqure  
-  AWS Access Key ID [None]: AKIAZRN75NYC5IIPO64J  
-  AWS Secret Access Key [None]: 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  
+  AWS Access Key ID [None]: ****直接教えます    
+  AWS Secret Access Key [None]: ****直接教えます   
   Default region name [None]: ap-northeast-1  
   Default output format [None]: json  
   
