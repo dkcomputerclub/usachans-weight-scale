@@ -12,6 +12,7 @@ import WeightAim from './src/weightAim';
 
 export default class App extends React.Component {
   render(){
+    let weightNow = 45;
   return (
     <View style={[styles.container]}>
       <View style={[styles.base, styles.header]}>
@@ -26,7 +27,7 @@ export default class App extends React.Component {
       <View style={[styles.base, styles.weight_today]}>
         <Text style={[styles.text, styles.textPink, styles.textBold,]}>今日の体重は</Text>
         <View style={styles.boxA}>
-          <Text style={[styles.text, styles.textWhite, styles.textBig, styles.textBold,]}>45 kg</Text>
+          <Text style={[styles.text, styles.textWhite, styles.textBig, styles.textBold,]}>{weightNow} kg</Text>
         </View>
       </View>
       <WeightAim/>
