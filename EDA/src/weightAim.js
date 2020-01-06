@@ -10,7 +10,7 @@ class WeightAim extends React.Component {
             </View>
 
             <View style={{flex :30,}, [styles.base, styles.box]}>
-              <Text style={[styles.textBig, styles.textHotpink, styles.textBold]}> 42 kg </Text>
+              <Text style={[styles.textBig, styles.textHotpink, styles.textBold]}> {this.props.aim} kg </Text>
             </View>
           </View>
 
