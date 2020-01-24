@@ -10,11 +10,6 @@ import * as firebase from "firebase/app";
 import "firebase/firestore";
 import WeightAim from './src/weightAim';
 
-// TODO: Replace the following with your app's Firebase project configuration
-const firebaseConfig = {
-
-};
-
 export default class App extends React.Component {
 
   state = {
@@ -28,12 +23,7 @@ export default class App extends React.Component {
     if (!firebase.apps.length) {
       try {
         firebase.initializeApp({
-          apiKey: 'AIzaSyBXNeYoy_Ky1YmEmdyShGuL2lGgUYXuSjo',
-          authDomain: 'usachans-weight-s.firebaseapp.com',
-          databaseURL: 'https://usachans-weight-s.firebaseio.com',
-          projectId: 'usachans-weight-s',
-          storageBucket: 'usachans-weight-s.appspot.com',
-          messagingSenderId: 'G-WHB4FDG8QH'
+
         });
       } catch (err) {
           console.error('Firebase initialization error raised', err.stack)
