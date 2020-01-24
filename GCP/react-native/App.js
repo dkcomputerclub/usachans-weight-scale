@@ -23,7 +23,7 @@ export default class App extends React.Component {
     if (!firebase.apps.length) {
       try {
         firebase.initializeApp({
-
+          
         });
       } catch (err) {
           console.error('Firebase initialization error raised', err.stack)
@@ -60,16 +60,16 @@ export default class App extends React.Component {
     return (
       <View style={[styles.container]}>
         <View style={[styles.base, styles.header]}>
-          <Text style={[styles.text, styles.textBig, styles.textRed, styles.textBold]}>Usakoのきろく</Text>
+          <Text style={[styles.text, styles.textBig, styles.textHeader, styles.textBold]}>Usakoのきろく</Text>
         </View>
 
         <View style={[styles.base, styles.today]}>
-    <Text style={[styles.text, styles.textBig]}>{this.state.month_date}</Text>
-          <Text style={[styles.text, styles.textMedium]}>{this.state.hours_minutes}</Text>
+    <Text style={[styles.textGray, styles.textBig]}>{this.state.month_date}</Text>
+          <Text style={[styles.textGray, styles.textMedium]}>{this.state.hours_minutes}</Text>
         </View>
 
         <View style={[styles.base, styles.weight_today]}>
-          <Text style={[styles.text, styles.textPink, styles.textBold,]}>今日の体重は</Text>
+          <Text style={[styles.text, styles.textGreen, styles.textBold,]}>今日の体重は</Text>
           <View style={styles.boxA}>
             <Text style={[styles.text, styles.textWhite, styles.textBig, styles.textBold,]}>{this.state.weightNow} kg</Text>
           </View>
@@ -94,6 +94,11 @@ const styles = StyleSheet.create({
     color: 'black',
   },
 
+  textGray: {
+    fontSize: 24,
+    color: '#7f7f7f'
+  },
+
   textBig: {
     fontSize: 38,
   },
@@ -110,12 +115,12 @@ const styles = StyleSheet.create({
     color: 'white',
   },
 
-  textRed: {
-    color: 'red',
+  textHeader: {
+    color: '#4fd9be',
   },
 
-  textPink: {
-    color: '#ff99cc',
+  textGreen: {
+    color: '#61e1cf',
   },
 
   textHotpink: {
@@ -136,7 +141,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 100,
 //    backgroundColor: 'lightpink',
-    backgroundColor: '#ff99cc',
+    backgroundColor: '#3bd9be',
     alignItems: 'center',
     justifyContent: 'center',
   },

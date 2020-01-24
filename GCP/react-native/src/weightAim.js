@@ -6,11 +6,11 @@ class WeightAim extends React.Component {
     return(
           <View style={[{flex :8, flexDirection : 'row'}, styles.base, styles.weightAim, {flexDirection: 'row'}]}>
             <View style={{flex :2,}, [styles.base]}>
-              <Text style={[styles.textMedium, styles.textPink]}>  目標体重  </Text>
+              <Text style={[styles.textMedium, styles.textGreen]}>  目標体重  </Text>
             </View>
 
             <View style={{flex :30,}, [styles.base, styles.box]}>
-              <Text style={[styles.textBig, styles.textHotpink, styles.textBold]}> {this.props.aim} kg </Text>
+              <Text style={[styles.textBig, styles.textStronggreen, styles.textBold]}> {this.props.aim} kg </Text>
             </View>
           </View>
 
@@ -54,8 +54,16 @@ textHotpink: {
   color: 'hotpink',
 },
 
+textStronggreen:{
+  color: '#4fd9be'
+},
+
 textBold: {
   fontWeight: 'bold',
+},
+
+textGreen: {
+  color: '#61e1cf',
 },
 
 // for blocks----------------------------------------------------
@@ -70,7 +78,7 @@ box: {
   backgroundColor: 'white',
   alignItems: 'center',
   justifyContent: 'center',
-  borderColor: "pink",
+  borderColor: '#61e1cf',
   borderWidth: 3,
 
 },
