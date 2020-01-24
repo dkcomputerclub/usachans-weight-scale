@@ -12,14 +12,7 @@ import WeightAim from './src/weightAim';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBXNeYoy_Ky1YmEmdyShGuL2lGgUYXuSjo",
-  authDomain: "usachans-weight-s.firebaseapp.com",
-  databaseURL: "https://usachans-weight-s.firebaseio.com",
-  projectId: "usachans-weight-s",
-  storageBucket: "usachans-weight-s.appspot.com",
-  messagingSenderId: "609939684116",
-  appId: "1:609939684116:web:ffe20eb4caccdaae0be001",
-  measurementId: "G-WHB4FDG8QH"
+
 };
 
 export default class App extends React.Component {
