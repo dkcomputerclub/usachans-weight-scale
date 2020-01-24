@@ -8,7 +8,12 @@ Rasberry Pi 1台
 はんだごて  
 
 ## セットアップ(Macの場合)
-### boto3有効化
+### Firestoreに体重データを送信する場合
+  - moduleのインストール
+  %pip install firebase-admin
+  %pip install google-cloud-firestore
+
+### DynamoDBに体重データを送信する場合
   - boto3 install  
   %pip install boto3
   - awsコマンド install  
@@ -23,5 +28,3 @@ Rasberry Pi 1台
   Default region name [None]: ap-northeast-1  
   Default output format [None]: json  
   
-### DynamoDB作成
-AWS→DynamoDB→プライマリキー:id
